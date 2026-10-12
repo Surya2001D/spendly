@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}Terms and Conditions — Spendly{% endblock %}
+
+{% block content %}
+
+<section class="legal-section">
+    <div class="legal-container">
+
+        <div class="legal-header">
+            <h1 class="legal-title">Terms and Conditions</h1>
+            <p class="legal-updated">Last updated: October 13, 2026</p>
+        </div>
+
+        <div class="legal-card">
+            <h2>1. Acceptance of Terms</h2>
+            <p>
+                By creating an account or using Spendly, you agree to these Terms and Conditions.
+                If you do not agree, please do not use the service.
+            </p>
+
+            <h2>2. Use of Service</h2>
+            <p>
+                Spendly is a personal expense tracking tool. You may use it to record, categorise,
+                and review your own spending. You agree to:
+            </p>
+            <ul>
+                <li>Provide accurate information when creating your account.</li>
+                <li>Keep your login credentials secure and confidential.</li>
+                <li>Not use the service for any unlawful purpose or to interfere with its operation.</li>
+            </ul>
+            <p>
+                Spendly is an organisational tool only and does not provide financial, tax,
+                or investment advice.
+            </p>
+
+            <h2>3. User Data</h2>
+            <p>
+                You own the expense data you enter into Spendly. We store it solely to provide
+                the service to you and do not sell it to third parties. You are responsible for
+                the accuracy of the data you enter. You may request deletion of your account
+                and associated data at any time.
+            </p>
+
+            <h2>4. Limitation of Liability</h2>
+            <p>
+                Spendly is provided "as is" without warranties of any kind. We are not liable for
+                any financial decisions you make based on information in the app, or for any loss
+                of data, service interruptions, or indirect damages arising from your use of the
+                service, to the fullest extent permitted by law.
+            </p>
+
+            <h2>5. Changes to Terms</h2>
+            <p>
+                We may update these Terms from time to time. When we do, we will revise the
+                "Last updated" date above. Continued use of Spendly after changes take effect
+                means you accept the revised Terms.
+            </p>
+        </div>
+
+        <p class="auth-switch">
+            <a href="{{ url_for('landing') }}">Back to home</a>
+        </p>
+
+    </div>
+</section>
+
+{% endblock %}
